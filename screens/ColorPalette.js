@@ -4,7 +4,6 @@ import ColorBox from '../components/ColorBox';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const ColorPalette = ({ route }) => {
-  console.log(route.params.colors);
   const { colors, paletteName } = route.params;
   return (
     <SafeAreaView>
