@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 
 const PalettePreview = ({ handlePress, colorPalette }) => {
-  console.log(colorPalette);
   return (
     <TouchableOpacity onPress={handlePress}>
       <Text style={styles.text}>{colorPalette.paletteName}</Text>
