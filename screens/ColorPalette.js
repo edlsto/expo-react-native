@@ -5,12 +5,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 const ColorPalette = ({ route }) => {
   console.log(route.params.colors);
-  const { palette, paletteName } = route.params;
+  const { colors, paletteName } = route.params;
   return (
     <SafeAreaView>
       <FlatList
         style={styles.container}
-        data={palette}
+        data={colors}
         keyExtractor={(item) => item.hexCode}
         renderItem={({ item }) => (
           <ColorBox colorName={item.colorName} colorHex={item.hexCode} />
